@@ -1,0 +1,235 @@
+/* roboto google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* styles.css */
+.flip-clock {
+  --fcc-flip-duration: 0.5s; /* transition duration when flip card */
+  --fcc-spacing: 8px; /* space between unit times and separators */
+  --fcc-digit-block-width: 40px; /* width of digit card */
+  --fcc-digit-block-height: 60px; /* height of digit card, highly recommend in even number */
+  --fcc-digit-block-radius: 5px; /* border radius of digit card */
+  --fcc-digit-block-spacing: 5px; /* space between blocks in each unit of time */
+  --fcc-digit-font-size: 50px; /* font size of digit */
+  --fcc-digit-color: black; /* color of digit */
+  --fcc-label-font-size: 15px; /* font size of label */
+  --fcc-label-color: #ffffff; /* color of label */
+  --fcc-background: hsla(0, 0%, 100%, 1); /* background of digit card */
+  --fcc-background: radial-gradient(  rgb(255, 255, 255), rgb(255, 255, 255), rgb(133, 133, 133)); /* gradient background for digit card */
+  --fcc-border:1px solid red;
+  --fcc-divider-color:black; /* color of divider */
+  --fcc-divider-height: 3px; /* height of divider */ 
+  --fcc-separator-size: 6px; /* size of colon */
+  --fcc-separator-color: rgb(0, 0, 0); /* color of colon */
+  font-family: "roboto";
+}
+/* .flip-clock .digit {
+  background: var(--fcc-background);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: var(--fcc-digit-color);
+} */
+
+.comming-soon-page{
+  background-image: url('./comming_soon_page.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.comming-soon-page h1{
+  color: white;
+  font-size: 6.5rem;
+  font-family: "roboto";
+  margin-bottom: 0%;
+  margin-top: 9rem;
+  letter-spacing: 10px;
+  z-index: 2;
+}
+.comming-soon-page h2{
+  font-family: "roboto";
+  color: white;
+  font-size: 10.5rem;
+  margin-top: -3.5rem;
+  margin-bottom: 1rem;
+  /* background-image: linear-gradient(to right ,#e7ae3b,#fdf6a5,#ec9c12,#fdf6a5,#ec9c12); */
+  background-image: linear-gradient(to right ,#BF953F,#fcf49c,#AA771C);
+
+  -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+  text-shadow:5px 100px 100px black;
+  letter-spacing: -0px;
+  /* background-image: url('./soon.jfif'); */
+  /* color: #F5DA76;  */
+  z-index: 2;
+}
+.singer-image{
+  opacity: 30%;
+  position: absolute;
+  z-index: 1;
+  top: 5%;
+  width: 15rem;
+}
+.dholk-image{
+  position: absolute;
+  width: 20rem; 
+  left: 3%;
+  top: 55%;
+}
+.star-image{
+  position: absolute;
+  width: 23rem;
+  right: 3%;
+  top: 65%;
+}
+.comming-soon-page button {
+  background-image: linear-gradient(to right ,#BF953F,#fcf49c,#AA771C);
+  /* background-color: #F5DA76; */
+  color: black;
+  font-size: 2rem;
+  font-family: "roboto";
+  padding: 10px 30px;
+  border: 1px solid gold;
+  outline: none;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.comming-soon-page a{
+  border: none;
+  outline: none;
+}
+
+
+/* media query  */
+@media(max-width:1250px){
+  .dholk-image{
+    width:17rem;
+    top: 60%;
+  }
+  .star-image{
+    width: 20rem;
+    top: 68%;
+  }
+  .comming-soon-page h1{
+    font-size: 6rem;
+  }
+  .comming-soon-page h2{
+    font-size: 10rem;
+  }
+  .comming-soon-page button {
+    font-size: 1.8rem;
+    padding: 9px 27px;
+  }
+}
+
+@media(max-width:1100px){
+  .dholk-image{
+    width:15rem;
+    top: 60%;
+  }
+  .star-image{
+    width: 17rem;
+    top: 70%;
+  }
+  .comming-soon-page h1{
+    font-size: 5rem;
+  }
+  .comming-soon-page h2{
+    font-size: 8.3rem;
+    margin-top: -2.7rem;
+  }
+  .comming-soon-page button {
+    font-size: 1.5rem;
+    padding: 9px 27px;
+    margin-top:3rem;
+  }
+  .flip-clock {
+    --fcc-digit-block-width: 30px; /* width of digit card */
+    --fcc-digit-block-height: 50px; /* height of digit card, highly recommend in even number */
+    --fcc-digit-block-spacing:5px; /* space between blocks in each unit of time */
+    --fcc-digit-font-size: 40px; /* font size of digit */
+    --fcc-label-font-size: 10px; /* font size of label */
+    --fcc-divider-height: 3px; /* height of divider */ 
+    --fcc-separator-size: 2px; /* size of colon */
+  }
+}
+
+
+@media(max-width:900px){
+  .dholk-image{
+    width:12rem;
+    top: 65%;
+  }
+  .star-image{
+    width: 15rem;
+    top: 72%;
+  }
+  .comming-soon-page h1{
+    font-size: 4.5rem;
+    margin-top: 5rem;
+  }
+  .comming-soon-page h2{
+    font-size: 7.7rem;
+    margin-top: -2.7rem;
+  }
+  .comming-soon-page button {
+    font-size: 1.5rem;
+    padding: 9px 27px;
+    margin-top:3rem;
+  }
+ 
+}
+
+
+@media(max-width:800px){
+  .dholk-image , .star-image{
+    display: none;
+  }
+  .comming-soon-page h1{
+    margin-top: 2rem;
+  }
+}
+
+@media(max-width:500px){
+  /* .dholk-image{
+    width:12rem;
+    top: 65%;
+  } */
+  /* .star-image{
+    width: 15rem;
+    top: 72%;
+  } */
+  .comming-soon-page h1{
+    font-size: 4.1rem;
+    margin-top: 0rem;
+  }
+  .comming-soon-page h2{
+    font-size: 7rem;
+    margin-top: -2.3rem;
+  }
+  .comming-soon-page button {
+    font-size: 1.2rem;
+    padding: 9px 27px;
+    margin-top:2rem;
+  }
+  .flip-clock {
+    --fcc-digit-block-width: 25px; /* width of digit card */
+    --fcc-digit-block-height: 35px; /* height of digit card, highly recommend in even number */
+    --fcc-digit-block-spacing:5px; /* space between blocks in each unit of time */
+    --fcc-digit-font-size: 30px; /* font size of digit */
+    --fcc-label-font-size: 10px; /* font size of label */
+    --fcc-divider-height: 3px; /* height of divider */ 
+    --fcc-separator-size: 1px; /* size of colon */
+  }
+}
