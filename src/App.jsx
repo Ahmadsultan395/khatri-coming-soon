@@ -19,7 +19,7 @@ function App() {
       <strong>O</strong>
       <strong>N</strong>
       </h2>
-      <FlipClockCountdown className='flip-clock' to={new Date().getTime() + 720 * 3600 * 1000 + 5000} />;
+      {/* <FlipClockCountdown className='flip-clock' to={new Date().getTime() + 720 * 3600 * 1000 + 5000} />; */}
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSctf-INimUNV4HsOWhNtl4eI6c8-QcOXpdm5VALKecomzvnjQ/viewform"><button>Apply Now</button></a>
 
      {/* return <FlipClockCountdown to={currentDate.getTime() + timeDifference} />; */}
