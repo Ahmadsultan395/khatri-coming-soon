@@ -36,7 +36,7 @@
 } */
 
 .comming-soon-page{
-  background-image: url('./comming_soon_page.jpg'); 
+  background-image: url('/comming_soon_page.jpg'); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
