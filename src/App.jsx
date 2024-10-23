@@ -11,6 +11,9 @@ function App() {
   return (
     <>
      <div className='comming-soon-page'>
+      <div className='logoimage'>
+      <img src="/khatriLogo.png" alt="" style={{width:'7rem'}} />
+      </div>
       <img className='singer-image' src="singer.png" alt="" />
      <h1>COMING</h1> 
      <h2>

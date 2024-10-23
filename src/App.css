@@ -36,6 +36,7 @@
 } */
 
 .comming-soon-page{
+  position: 'relative';
   background-image: url('/comming_soon_page.jpg'); 
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,6 +94,14 @@
   right: 3%;
   top: 65%;
 }
+.logoimage{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding:1rem;
+}
+
 .comming-soon-page button {
   background-image: linear-gradient(to right ,#BF953F,#fcf49c,#AA771C);
   /* background-color: #F5DA76; */
@@ -197,11 +206,11 @@
     display: none;
   }
   .comming-soon-page h1{
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
 }
 
-@media(max-width:500px){
+@media(max-width:600px){
   /* .dholk-image{
     width:12rem;
     top: 65%;
@@ -210,9 +219,12 @@
     width: 15rem;
     top: 72%;
   } */
+  .logoimage{
+    display:flex;
+  }
   .comming-soon-page h1{
     font-size: 4.1rem;
-    margin-top: 0rem;
+    margin-top: 3rem;
   }
   .comming-soon-page h2{
     font-size: 7rem;
